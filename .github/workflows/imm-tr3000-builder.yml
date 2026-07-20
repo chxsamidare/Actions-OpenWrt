@@ -154,7 +154,7 @@ jobs:
         keep_minimum_runs: 2
 
     - name: Remove old Releases
-      uses: georgezouq/delete-old-releases@v1
+      uses: thomaseizinger/clean-releases@v0.11.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
         keep_latest: 3
